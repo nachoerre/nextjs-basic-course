@@ -34,7 +34,7 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    fallback: false, //fallback allow to pregenerate some of your pages for specific id values
+    fallback: 'blocking', //fallback allow to pregenerate some of your pages for specific id values
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
