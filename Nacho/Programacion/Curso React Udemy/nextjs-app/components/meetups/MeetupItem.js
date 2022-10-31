@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 
 import Card from "../ui/Card";
